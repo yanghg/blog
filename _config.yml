@@ -1,6 +1,7 @@
 # Dependencies
 markdown:         redcarpet
 highlighter:      pygments
+excerpt_separator: "<!--more-->"
 
 # Permalinks
 permalink:        pretty
@@ -18,13 +19,12 @@ author:
 paginate:      5
 
 # Custom vars
-version:          0.0.3
+version:          0.0.1
 
 # Comments
-
 comments :
     provider : duoshuo
     duoshuo :
-          short_name : cellier-me
+          short_name : yanghg
 
 
