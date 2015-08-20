@@ -52,7 +52,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-  font-size: 1.5rem;
+  font-size: 1.8rem;
 }
 
 h2 {
@@ -61,8 +61,8 @@ h2 {
 }
 
 h3 {
-  margin-top: 1.5rem;
-  font-size: 1.2rem;
+  margin-top: 1rem;
+  font-size: 1rem;
 }
 
 h4, h5, h6 {
@@ -90,6 +90,10 @@ ul, ol, dl {
   h2 {
     margin-top: 2.5rem;
     font-size: 1.125rem;
+  }
+  h3 {
+    margin-top: 1.5rem;
+    font-size: 1.2rem;
   }
 }
 
@@ -324,7 +328,7 @@ a.sidebar-nav-item:focus {
   width: 2.2rem;
   padding: .5rem .65rem;
   color: #505050;
-  background-color: #fff;
+  background-color: transparent;
   border-radius: 4px;
   cursor: pointer;
   border: 0.1rem solid;
@@ -436,7 +440,7 @@ a.sidebar-nav-item:focus {
 /* Blog post or page title */
 .page-title,
 h1.post-title {
-  font-size: 1.5rem; 
+  font-size: 1.2rem; 
 }
 .page-title,
 .post-title {
