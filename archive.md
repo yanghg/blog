@@ -14,9 +14,9 @@ permalink: /archive/
 
 {% endif %}
    
-<a href="{{ post.url }}" target="_self"> 
+<a class='archive-link' href="{{site.baseurl}}{{ post.url }}" target="_self"><span class="archive-title"> 
 
-{{ post.title }}<span class="pull-right">{{ post.date | date:'%m月%d日' }}</span>
+{{ post.title }}</span><span class="pull-right">{{ post.date | date:'%m月%d日' }}</span>
 
 </a>
 

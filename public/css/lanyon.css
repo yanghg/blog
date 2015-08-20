@@ -35,6 +35,7 @@
  */
 
 /* Prevent scroll on narrow devices */
+
 html,
 body {
   overflow-x: hidden;
@@ -47,8 +48,7 @@ html {
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Open Sans','Helvetica Neue', Helvetica, Tahoma, Arial, "Hiragino Sans GB", 'STXihei', "华文细黑", "Microsoft YaHei", "微软雅黑", 'SimSun', "宋体", 'Heiti', "黑体", sans-serif;
   font-weight: 400;
-  color: #313131;
-  letter-spacing: -.025rem;
+  color: #515151;
 }
 
 h1 {
@@ -62,16 +62,23 @@ h2 {
 
 h3 {
   margin-top: 1.5rem;
-  font-size: 1rem;
+  font-size: 1.2rem;
 }
 
 h4, h5, h6 {
   font-weight:bold;
   margin-top: 1rem;
-  font-size: 0.90rem;
+  font-size: 1rem;
 }
 
 p {
+  font-size: 1rem;
+}
+
+/* Lists */
+ul, ol, dl {
+  margin-top: 0;
+  margin-bottom: 1rem;
   font-size: 1rem;
 }
 
@@ -82,9 +89,16 @@ p {
 
   h2 {
     margin-top: 2.5rem;
-    font-size: 1.2rem;
+    font-size: 1.125rem;
   }
 }
+
+/*
+ * Excerpt
+ *
+ * Make it dispear in posts
+ */
+.more { display: none; }
 /*
  * Wrapper
  *
@@ -122,6 +136,10 @@ p {
   padding-bottom: 1rem;
   margin-bottom: 1rem;
   text-align: center;
+  background: -webkit-radial-gradient(50% 100% farthest-side,#DA4939 5%,#FCCF8E 40%, #FFFAD7); /* Safari 5.1 to 6.0 */
+  background: -o-radial-gradient(50% 100% farthest-side,#DA4939 5%,#FCCF8E 40%, #FFFAD7); /* For Opera 11.6 to 12.0 */
+  background: -moz-radial-gradient(50% 100% farthest-side,#DA4939 5%,#FCCF8E 40%, #FFFAD7); /* For Firefox 3.6 to 15 */
+  background: radial-gradient(farthest-side at 50% 100%,#DA4939 5%,#FCCF8E 40%, #FFFAD7); 
   /*border-bottom: 1px solid #eee;*/
 }
 
@@ -136,7 +154,7 @@ p {
 }
 
 .masthead h2{
-  color:#da4939;
+  color:#515151;
 }
 .masthead-title {
   margin-top: 0;
@@ -144,7 +162,7 @@ p {
   color: #bdbdbd;
 }
 .masthead-title a {
-  color: #515151;
+  color: #da4939;
   text-decoration: none
 }
 /*.masthead-title small {
@@ -154,6 +172,67 @@ p {
   letter-spacing: 0;
 }*/
 
+/* Code */
+code,
+pre {
+  font-family: "DejaVu Sans Mono",Menlo,Consolas,"Droid Sans Mono","source-code-pro",monospace;
+}
+code {
+  padding: .25em .5em;
+  font-size: 85%;
+  color: #da4939;
+  background-color: #FFE7E7;
+}
+.highlight pre {
+    margin-bottom: 0;
+}
+pre {
+    display: block;
+    padding: 1rem;
+    margin-top: 0;
+    margin-bottom: 1em;
+    font-size: 0.75rem;
+    line-height: 1.4;
+    white-space: pre;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    border: 1px solid #e6e1dc;
+}
+
+
+pre code {
+  padding: 0;
+  font-size: 100%;
+  color: inherit;
+  background-color: transparent;
+}
+
+@media only screen and (min-width: 768px){
+  pre {
+      font-size: 14px;
+      font-size: 0.875rem;
+  }
+}
+/* Pygments via Jekyll */
+.highlight {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  background-color: #fdf6e3;
+  color: #586e75;
+}
+.highlight pre {
+  margin-bottom: 0;
+  overflow: hidden;
+}
+
+.post-date {
+    font-size: 0.8rem;
+    display: block;
+    text-align: center;
+    margin-top: -.5rem;
+    margin-bottom: 1rem;
+    color: #bdbdbd;
+}
 /*
  * Sidebar
  *
@@ -356,9 +435,8 @@ a.sidebar-nav-item:focus {
 
 /* Blog post or page title */
 .page-title,
-.post-title,
-{
-  font-size: 1rem; 
+h1.post-title {
+  font-size: 1.5rem; 
 }
 .page-title,
 .post-title {
@@ -366,19 +444,24 @@ a.sidebar-nav-item:focus {
   margin-top: 1.5rem;
   margin-bottom: 1.5rem;
 }
-.post-title a,.post p>a{
+.post-title a,.post p>a,a.archive-link{
   color: #da4939;
   text-decoration: none;
   border-bottom: 1px solid transparent;
 }
+a.archive-link:hover{
+  transition: color 0.2s;
+  color: #515151;
+}
 .post-title a:hover,
-.post p>a:hover{
+.post p>a:hover,
+{
   transition: border-bottom-color 0.2s;
   border-bottom-color: #da4939;
 }
 @media only screen and (min-width: 768px){
   .page-title,
-  .post-title{
+  h1.post-title {
   font-size: 1.8rem;
   }
 }

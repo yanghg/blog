@@ -59,9 +59,8 @@ html {
 }
 
 body {
-  font-size: 0.80rem;
+  font-size: 0.85rem;
   color: #515151;
-  background-color: #fff;
   -webkit-text-size-adjust: 100%;
       -ms-text-size-adjust: 100%;
 }
@@ -97,11 +96,11 @@ h2 {
 }
 h3 {
   margin-top: 1.5rem;
-  font-size: 0.90rem;
+  font-size: 1rem;
 }
 h4, h5, h6 {
   margin-top: 1rem;
-  font-size: 0.8rem;
+  font-size: 1rem;
 }
 
 /* Body text */
@@ -113,14 +112,6 @@ p {
 
 strong {
   color: #303030;
-}
-
-
-/* Lists */
-ul, ol, dl {
-  margin-top: 0;
-  margin-bottom: 1rem;
-  font-size: 0.80rem;
 }
 
 dt {
@@ -148,47 +139,6 @@ abbr {
 abbr[title] {
   cursor: help;
   border-bottom: 1px dotted #e5e5e5;
-}
-
-/* Code */
-code,
-pre {
-  font-family: 'Open Sans','Helvetica Neue', Helvetica, Tahoma, Arial, "Hiragino Sans GB", 'STXihei', "华文细黑", "Microsoft YaHei", "微软雅黑", 'SimSun', "宋体", 'Heiti', "黑体", sans-serif;
-}
-code {
-  padding: .25em .5em;
-  font-size: 80%;
-  color: #bf616a;
-  background-color: #f9f9f9;
-  border-radius: 3px;
-}
-pre {
-  display: block;
-  margin-top: 0;
-  margin-bottom: 1rem;
-  padding: 1rem;
-  font-size: 0.80rem;
-  line-height: 1.4;
-  white-space: pre;
-  white-space: pre-wrap;
-  word-break: break-all;
-  word-wrap: break-word;
-  background-color: #f9f9f9;
-}
-pre code {
-  padding: 0;
-  font-size: 80%;
-  color: inherit;
-  background-color: transparent;
-}
-
-/* Pygments via Jekyll */
-.highlight {
-  margin-bottom: 1rem;
-  border-radius: 4px;
-}
-.highlight pre {
-  margin-bottom: 0;
 }
 
 /* Gist via GitHub Pages */

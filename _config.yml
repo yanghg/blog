@@ -1,7 +1,7 @@
 # Dependencies
 markdown:         redcarpet
 highlighter:      pygments
-excerpt_separator: "<!--more-->"
+excerpt_separator: <span class="more"></span>
 
 # Permalinks
 permalink:        pretty
@@ -9,7 +9,7 @@ permalink:        pretty
 # Setup
 title:            yang
 tagline:          ''
-description:      '『he looks like a dog so』 『because he is a PM』'
+description:      '『to see the world as it is, and to love it』'
 url:              http://yanghg.github.io
 baseurl: /blog
 author:
