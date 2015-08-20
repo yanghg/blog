@@ -186,6 +186,7 @@ code {
   font-size: 85%;
   color: #da4939;
   background-color: #FFE7E7;
+  border-radius: 0.3rem;
 }
 .highlight pre {
     margin-bottom: 0;
@@ -200,7 +201,6 @@ pre {
     white-space: pre;
     white-space: pre-wrap;
     word-wrap: break-word;
-    border: 1px solid #e6e1dc;
 }
 
 
@@ -223,6 +223,8 @@ pre code {
   margin-bottom: 1rem;
   background-color: #fdf6e3;
   color: #586e75;
+  border: 0.15rem solid #e6e1dc;
+  border-radius: 0.5rem;
 }
 .highlight pre {
   margin-bottom: 0;
