@@ -140,10 +140,10 @@ ul, ol, dl {
   padding-bottom: 1rem;
   margin-bottom: 1rem;
   text-align: center;
-  background: -webkit-radial-gradient(50% 100% farthest-side,#DA4939 5%,#FCCF8E 40%, #FFFAD7); /* Safari 5.1 to 6.0 */
+  background: -webkit-radial-gradient(50% 100%,#DA4939 5%,#FCCF8E 40%, #FFFAD7); /* Safari 5.1 to 6.0 */
   background: -o-radial-gradient(50% 100% farthest-side,#DA4939 5%,#FCCF8E 40%, #FFFAD7); /* For Opera 11.6 to 12.0 */
   background: -moz-radial-gradient(50% 100% farthest-side,#DA4939 5%,#FCCF8E 40%, #FFFAD7); /* For Firefox 3.6 to 15 */
-  background: radial-gradient(farthest-side at 50% 100%,#DA4939 5%,#FCCF8E 40%, #FFFAD7); 
+  background: radial-gradient(farthest-side at 50% 110%,#DA4939 3%,#FCCF8E 40%, #FFFAD7); 
   /*border-bottom: 1px solid #eee;*/
 }
 
@@ -327,11 +327,10 @@ a.sidebar-nav-item:focus {
   border: 0.1rem solid;
   width: 2.2rem;
   padding: .5rem .65rem;
-  color: #505050;
+  color: #515151;
   background-color: transparent;
-  border-radius: 4px;
   cursor: pointer;
-  border: 0.1rem solid;
+  border: 0.1rem solid #515151;
   border-radius: 0.5rem;
 }
 
@@ -360,6 +359,7 @@ a.sidebar-nav-item:focus {
 #sidebar-checkbox:checked ~ .sidebar-toggle {
   color: #fff;
   background-color: #da4939;
+  border-color: #da4939;
 }
 
 @media (min-width: 30.1em) {
