@@ -124,6 +124,19 @@ ul, ol, dl {
   max-width: 28rem;
 }
 
+@media (min-width: 38em) {
+  .container {
+    max-width: 32rem;
+  }
+}
+
+@media only screen and (min-width: 768px){
+  .container {
+    width: 90%;
+    max-width: 768px;
+  }
+}
+
 @media (min-width: 56em) {
   .container {
     max-width: 38rem;

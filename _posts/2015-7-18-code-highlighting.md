@@ -2,7 +2,6 @@
 layout: post
 title: Syntax highligting test
 author: voidy
-description: "一篇用于测试博客模板代码高亮的演示"
 modified: 2014-12-30
 category: sample-post
 ---
