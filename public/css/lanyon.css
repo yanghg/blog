@@ -252,6 +252,10 @@ pre code {
     margin-bottom: 1rem;
     color: #bdbdbd;
 }
+
+.ox-wrapper{
+  overflow-x:auto;
+}
 /*
  * Sidebar
  *

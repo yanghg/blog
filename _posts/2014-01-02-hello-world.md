@@ -9,7 +9,7 @@ Hello everyone! Just built my first blog with github page and jekyll. This is th
 <span class="more"></span>
 
 following is a test for tables, I wrote it with markdown format:
-
+<div class="ox-wrapper">
 <table>
   <thead><th></th><th>mpg</th><th>cyl</th><th>disp</th><th>hp</th><th>drat</th><th>wt</th></thead>
   <tbody>
@@ -21,3 +21,4 @@ following is a test for tables, I wrote it with markdown format:
     <tr><td>Valiant</td><td>18.10</td><td>6.00</td><td>225.00</td><td>105.00</td><td>2.76</td><td>3.46</td></tr>
   </tbody>
 </table>
+</div>
