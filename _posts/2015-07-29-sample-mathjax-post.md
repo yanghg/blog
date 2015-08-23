@@ -51,13 +51,13 @@ $$
 $$P(E) = {n \choose k} p^k (1-p)^{ n-k} $$
 
 **An Identity of Ramanujan**
-
+<div class='ox-wrapper'>
 $$
    \frac{1}{(\sqrt{\phi \sqrt{5}}-\phi) e^{\frac25 \pi}} =
      1+\frac{e^{-2\pi}} {1+\frac{e^{-4\pi}} {1+\frac{e^{-6\pi}}
       {1+\frac{e^{-8\pi}} {1+\ldots} } } }
 $$
-
+</div>
 **Maxwell's Equations**
 
 
